@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+            <title>Aula 8</title>
+            <meta charset="utf-8" />
+            <script type="text/javascript">  
+                var listaProdutos = [];
+                var produto = '';
+                var existe = false;
+                do {
+                    produto = prompt('Informe um produto:');
+                    if (produto == '') {
+                        alert('Produto inválido!');
+                    } else {
+                        existe = false;
+                    for(var i = 0; i < listaProdutos.length; i++){
+                    if (listaProdutos[i] == produto) {
+                        alert ('produto repetido, por favor digite outro');
+                        existe = true;
+                    }
+                    }if (!existe)
+                        listaProdutos.push(produto);
+                    }
+                    } while (confirm('Deseja inserir mais produtos?'));
+                        totalElementos = listaProdutos.length;
+                    for (var i = 0; i < totalElementos; i++) {
+                        document.write(listaProdutos[i] + '<br />');
+                    }
+            </script>
+    </head>
+    <body>
+
+    </body>
+</html>

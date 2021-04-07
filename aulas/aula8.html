@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula 8</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            var listaProdutos = [];
+            var produto = '';           
+            do {
+                produto = prompt('Informe um produto:'); //solicita para o usuário iserir um produto
+                if (produto == ''){ //verificação se o produto é vazio
+                    alert('Produto Inválido'); //se for vazio, retorna uma mensagem para o usuário
+                } else{ // se não for vazio
+                    listaProdutos.push(produto); //vai pegar o valor da variável e add no array (push que adiciona no array)
+                }
+            } while (confirm('Deseja inserir mais um produto?')); //laço de repetição para retornar verdadeiro ou falso - se o usuário quer continuar adicionando produto
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

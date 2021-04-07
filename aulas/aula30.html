@@ -1,0 +1,41 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <title>Aula 8</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+    var listaProdutos = [];
+    var produto = '';
+    do {
+    produto = prompt('Informe o produto:');
+    if(produto ==''){
+    alert('Produto Invalido!');
+    }
+
+    else{
+
+for(i = 0; i< listaProdutos.length; i++){
+    if(produto == listaProdutos[i]){
+        alert('Produto já cadastrado');
+    }
+  }	
+    listaProdutos.push(produto);
+}
+
+}while(confirm('Deseja inserir mais produtos?'));//confirm retorna verdadeiro ou falso
+
+
+
+console.log(listaProdutos);
+
+
+</script>
+</head>
+</html>
+    
+    
+
+
+
+   

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Aula 8</title>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+            class Cliente {
+                constructor(cpf, nome, endereco) {
+                    // propriedade = variavel(valor)
+                    this.cpf = cpf;
+                    this.nome = nome;
+                    this.endereco = endereco;
+                }
+            }
+
+            var listaClientes = new Array();
+
+            var cliente1 = new Cliente('11.111.111 - 11', 'João', 'Rua A');
+            var cliente2 = new Cliente('222.222.222 - 22', 'Ana', 'Rua B');
+            var cliente3 = new Cliente('333.333.333 - 333', 'Carol', 'Rua C');
+            var cliente4 = new Cliente('', 'Robert', 'Whashington Street');
+            listaClientes.push(cliente1);
+            listaClientes.push(cliente2);
+            listaClientes.push(cliente3);
+            listaClientes.push(cliente4);
+            listaClientes.push(new Cliente('555.555.555-55', 'Bia', 'Rua D'));
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
