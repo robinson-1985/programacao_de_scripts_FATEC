@@ -1,0 +1,10 @@
+body {
+    background: #4682B4;
+    /*background: url('imagens/bg.jpg');*/
+}
+
+footer {
+    font-size: 18px;
+    font-family: arial;
+    color: #0000FF;
+}
