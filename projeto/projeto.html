@@ -10,32 +10,57 @@
 	</head>
 	<body>		
 		<header>
-		  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<img src="imagens\bg.jpg" width="100%" height="100" />
+		  <nav class="navbar navbar-expand-md navbar-dark bg-dark centralizar">
 		    <div class="container-fluid">
 		      <a class="navbar-brand" href="#">Cadastro de Produto</a>
 		    </div>
 		  </nav>
 		</header>
-		<main>
-			<img src="imagens\bg.jpg" width="100%" height="100"/>
+		<main>			
 			<div class="container">
 				<div class="row mt-5">
 					<div class="col-md-6">
+						<h5>Cadastro</h5>
+						<input type="hidden" id="idProduto" name="idProduto" value="1"/>
 						<input type="text" class="form-control mb-2" id="txtCodigo" placeholder="Código" />
 						<input type="text" class="form-control mb-2" id="txtNome" placeholder="Nome" />
 						<input type="text" class="form-control mb-2" id="txtUnidade" placeholder="Unidade" />						
 						<input type="number" class="form-control mb-2" id="txtValor" placeholder="Valor" />
-						<button class="btn btn-success mb-2" id="btCadastrar">Cadastrar</button>
+						<button class="btn btn-primary mb-2" id="btSalvar">Salvar</button>
+						<button class="btn btn-primary mb-2" id="btAJAX">AJAX</button>
+						<button class="btn btn-primary mb-2" id="btJSON">JSON</button>
+						<div id="infoAJAX"></div>
+						<div id="infoJSON"></div>
 					</div>
 					<div class="col-md-6">
-						
+						<h5>Listagem</h5>
+						<table id="tabelaProduto" class="table">
+							<thead>
+								<tr>
+									<th>Código</th>
+									<th>Nome</th>
+									<th>Unidade</th>
+									<th>Valor</th>
+									<th>Alterar</th>
+								</tr>
+							</thead>
+							<tbody id="tbodyTabelaProduto">
+								<!-- <tr>
+									<td>1</td>
+									<td>Lanche</td>
+									<td>UN</td>
+									<td>5,99</td>
+								</tr> -->
+							</tbody>
+						</table>
 					</div>
 					<!-- <p style="font-size: 40px;">Exemplo</p> -->
 				</div>
 			</div>
 		</main>
 	  <footer class="container">
-	    <p>Rodapé</p>
+	    <p>&reg; Projeto</p>
 	  </footer>		
 	</body>
 </html>
